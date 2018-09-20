@@ -1,4 +1,6 @@
 #!/usr/bin/env sh
 set -eo pipefail
 
-curl $@ $SLACK_WEBHOOK_URL
+echo "$@ $SLACK_WEBHOOK_URL"
+
+curl "$@ $SLACK_WEBHOOK_URL"
