@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
-set -eo pipefail
 
-curl -X POST -H 'Content-type: application/json' --data '{"text":"Allow me to reintroduce myself"}' "$SLACK_WEBHOOK_URL"
+COMMAND="-X POST -H 'Content-type: application/json' --data '{\"text\":\"Success! $* \"}' $SLACK_WEBHOOK_URL"
+eval curl "$COMMAND"
