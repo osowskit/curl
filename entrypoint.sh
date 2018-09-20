@@ -1,1 +1,1 @@
-exec curl "$@" $SLACK_WEBHOOK_URL
+echo "hello world" # $SLACK_WEBHOOK_URL
