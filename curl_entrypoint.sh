@@ -9,5 +9,5 @@ COMMAND="-s -X POST \
    -H 'Authorization: token $TRAVIS_TOKEN' \
    -d '$PAYLOAD' \
    https://api.travis-ci.com/repo/$GITHUB_REPOSITORY/requests"
-
+echo "$COMMAND"
 eval curl "$COMMAND"
